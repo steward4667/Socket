@@ -1,0 +1,19 @@
+﻿<Window x:Class="SocketServer.Server"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocketServer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="ClientIP:" Margin="155,100,510,291" FontSize="20"></TextBlock>
+        <TextBlock  Name="ClientIPTextblock" Margin="287,100,251,291" ></TextBlock>
+        <TextBlock Text="ClientPort:" Margin="155,133,510,258" FontSize="20"></TextBlock>
+        <TextBlock  Name="ClientPortTextblock" Margin="287,133,251,258" ></TextBlock>
+        <TextBlock Text="ClientFileName:" Margin="118,166,521,225" FontSize="20"></TextBlock>
+        <TextBlock  Name="ClientFileNameTextblock" Margin="287,184,251,207" ></TextBlock>
+        <TextBlock  Text="ServerStatus:" FontSize="20"  Margin="133,246,505,113" ></TextBlock>
+        <TextBlock  Name="ServerStatusTextblock" Margin="287,246,211,113" ></TextBlock>
+    </Grid>
+</Window>

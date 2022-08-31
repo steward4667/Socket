@@ -1,0 +1,26 @@
+﻿<Window x:Class="SocketClient.Clinet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocketClient"
+        mc:Ignorable="d"
+        Title="Client" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="22,29,0,0" Text="Remote IP Address:" FontSize="20" VerticalAlignment="Top" Width="208"/>
+        <TextBox Name="ServerIPTextBox" Margin="258,29,128,356" ></TextBox>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="22,81,0,0" Text="Remote Port:" FontSize="20" VerticalAlignment="Top" Width="208"/>
+        <TextBox Name="ServerPortTextBox" Margin="258,81,128,304" ></TextBox>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="22,137,0,0" Text="FileName:" FontSize="20" VerticalAlignment="Top" Width="208"/>
+        <TextBox Name="ServerFileNameTextBox" Margin="258,137,128,248" ></TextBox>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="22,200,0,0" Text="FilePath:" FontSize="20" VerticalAlignment="Top" Width="208"/>
+        <TextBox Name="ClientFilePathTextBox" Margin="258,200,128,185" ></TextBox>
+
+        <TextBlock Margin="22,268,642,97" Text="Status:" FontSize="20"></TextBlock>
+        <Border BorderThickness="1" BorderBrush="Black" Margin="258,268,144,97">
+            <TextBlock Name="ServerStatus" FontSize="20" ></TextBlock>
+        </Border>
+        
+        <Button Click="Button_Click" Content="Send Request" FontSize="20" Margin="258,344,376,10" ></Button>
+    </Grid>
+</Window>
